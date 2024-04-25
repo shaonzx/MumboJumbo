@@ -1,13 +1,13 @@
 <mat-toolbar class="mat-elevation-z8">
-  <button
-    mat-icon-button
-    *ngIf="sidenav.mode === 'over'"
-    (click)="sidenav.toggle()"
-  >
-    <mat-icon *ngIf="!sidenav.opened"> menu </mat-icon>
-    <mat-icon *ngIf="sidenav.opened"> close </mat-icon>
+  @if (sidenav.mode === 'over') {
+  <button mat-icon-button (click)="sidenav.toggle()">
+    @if (!sidenav.opened) {
+    <mat-icon> menu </mat-icon>
+    } @if (sidenav.opened) {
+    <mat-icon> close </mat-icon>
+    }
   </button>
-  Mumbo Jumbo is in Action!
+  } Mumbo Jumbo is in Action!
 </mat-toolbar>
 
 <mat-sidenav-container>
@@ -22,6 +22,32 @@
     </button>
 
     <mat-divider></mat-divider>
+
+    <button mat-button class="menu-button" routerLink="/event-object">
+      <mat-icon><i class="material-icons">attach_money</i></mat-icon>
+      <span>$event object</span>
+    </button>
+
+    <mat-divider></mat-divider>
+
+    <button mat-button class="menu-button" routerLink="/directives">
+      <mat-icon><i class="material-icons">directions</i></mat-icon>
+      <span>Directives</span>
+    </button>
+
+    <mat-divider></mat-divider>
+
+    <button mat-button class="menu-button" routerLink="/dummy-submit-form">
+      <mat-icon><i class="material-icons">directions</i></mat-icon>
+      <span>Submit Form</span>
+    </button>
+
+    <mat-divider></mat-divider>
+
+    <button mat-button class="menu-button" routerLink="/user-portfolio">
+      <mat-icon><i class="material-icons">supervised_user_circle</i></mat-icon>
+      <span>User Portfolio</span>
+    </button>
   </mat-sidenav>
 
   <mat-sidenav-content>

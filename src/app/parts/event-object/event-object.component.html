@@ -1,0 +1,11 @@
+<div>
+  <input
+    type="text"
+    (keypress)="keyPressed($event)"
+    (keydown)="isShift($event)"
+  />
+
+  <label>Latest pressed key: {{ pressedKey }}</label>
+
+  <label>{{ shiftPressed }}</label>
+</div>

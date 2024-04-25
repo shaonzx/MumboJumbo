@@ -1,0 +1,92 @@
+<div class="d1">
+  Directives
+  <ol>
+    <li>Structural (ngIf, ngFor, ngSwitch)</li>
+    <li>Atribute (ngClass, ngStyle, ngModel)</li>
+    <li>Component (ngTemplate)</li>
+  </ol>
+  <br />
+</div>
+
+<div class="d2">
+  <input type="checkbox" [(ngModel)]="checkedError" />
+  <label>Show error</label>
+
+  <div *ngIf="checkedError" style="color: red">The is an error</div>
+
+  <br />
+  <input
+    type="checkbox"
+    [(ngModel)]="checked"
+    (ngModelChange)="checkedChange()"
+  />
+  <label>Check me</label>
+
+  <div *ngIf="checked">The thing is checked</div>
+
+  <div class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th>Id</th>
+          <th>Name</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let dev of listOfDevs">
+          <td>{{ dev.Id }}</td>
+          <td>{{ dev.Name }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="d3">
+  <p [ngClass]="upgrayeddStyesVar">This is an example of ngClass</p>
+
+  <input
+    class="input-monster"
+    type="text"
+    placeholder="Enter text here..."
+    (input)="textInput($event)"
+    [ngClass]="{ txt: hasText }"
+  />
+
+  <div [ngClass]="colorMode">
+    <button (click)="toggleMode()">Toggle Mode</button>
+    <div class="box">
+      <h1>Light Mode</h1>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis
+        laboriosam cum inventore. Autem nesciunt delectus, voluptatum vero
+        quibusdam in atque dolor, voluptatem eius laboriosam porro deleniti, ab
+        similique illum hic.
+      </p>
+    </div>
+
+    <div class="box">
+      <h1>Dark Mode</h1>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis
+        laboriosam cum inventore. Autem nesciunt delectus, voluptatum vero
+        quibusdam in atque dolor, voluptatem eius laboriosam porro deleniti, ab
+        similique illum hic.
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="d4">
+  <div class="d4-child">
+    <div class="input-container">
+      <input type="text" [(ngModel)]="user" />
+      <label for="">Full Name</label>
+    </div>
+    <ng-container *ngIf="user !== ''; else notValid"></ng-container>
+
+    <ng-template #notValid>
+      <h3>Please enter your name</h3>
+    </ng-template>
+  </div>
+</div>

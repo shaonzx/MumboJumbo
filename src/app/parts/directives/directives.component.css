@@ -1,0 +1,140 @@
+div {
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.d1 {
+  background-color: gainsboro;
+}
+
+.d2 {
+  background-color: aliceblue;
+}
+
+.d3 {
+  background-color: aqua;
+}
+
+.d4 {
+  background-color: antiquewhite;
+}
+
+/* for table */
+.table-container {
+  margin: 20px;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 2px solid #000; /* Solid black border around the table */
+}
+
+thead {
+  background-color: #f2f2f2;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 8px;
+  border-bottom: 1px solid #ddd; /* Horizontal line between rows */
+  border-right: 1px solid #ddd; /* Vertical line between columns */
+}
+
+/* To ensure the rightmost column doesn't have a visible right border */
+th:last-child,
+td:last-child {
+  border-right: none;
+}
+
+tr:hover {
+  background-color: #e8f4f8;
+}
+
+/*Attribute directive*/
+.upgrayeddStyes {
+  text-align: center;
+  background-color: #000;
+  color: goldenrod;
+  font-size: 21px;
+  padding: 10px 20px;
+  margin: 0 auto;
+  border-radius: 5px;
+  width: 700px;
+}
+
+.italicText {
+  font-style: italic;
+}
+.letterFormat {
+  text-transform: uppercase;
+}
+
+.input-monster {
+  width: 200px;
+  height: 25px;
+  font-size: 15px;
+}
+.input-monster.txt {
+  background-color: red;
+}
+
+.light-mode {
+  background-color: white;
+  color: #000;
+}
+
+.dark-mode {
+  background-color: darkgray;
+  color: white;
+}
+
+.d4-child {
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 35px;
+  height: 100px;
+  width: 250px;
+  /* position: fixed;
+  left: 51%;
+  top: 39%; */
+  /* transform: translate(-50%, -50%); */
+  border-radius: 10px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.input-container {
+  position: relative;
+}
+.input-container label {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  font-size: 16px;
+  color: white;
+  transition: all 0.5s ease-in-out;
+}
+
+.input-container input {
+  border: 0;
+  border-bottom: 1px solid #555;
+  background: transparent;
+  width: 100%;
+  padding: 8px 0 5px 0;
+  font-size: 16px;
+  color: white;
+}
+
+.input-container input:focus {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid cyan;
+}
+
+.input-container input:focus ~ label {
+  top: -12px;
+  font-size: 12px;
+}
+h3 {
+  color: goldenrod;
+}

@@ -19,10 +19,20 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 import { MatCardModule } from '@angular/material/card';
 import { WelcomeComponent } from './welcome/welcome.component';
+import { DirectivesSubmitformComponent } from './parts/directives-submitform/directives-submitform.component';
+import { UserPortfolioComponent } from './parts/user-portfolio/user-portfolio.component';
 
 @NgModule({
-  declarations: [AppComponent, LayoutComponent, WelcomeComponent],
+  //exported classes needs to be declared here. cannot declare multiple times.
+  declarations: [
+    AppComponent,
+    LayoutComponent,
+    WelcomeComponent,
+    DirectivesSubmitformComponent,
+    UserPortfolioComponent,
+  ],
   imports: [
+    //additionls modules needed to be declared before using them.
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
@@ -40,6 +50,7 @@ import { WelcomeComponent } from './welcome/welcome.component';
     MatNativeDateModule,
     MatCardModule,
   ],
+  //for services and guards
   providers: [],
   bootstrap: [AppComponent],
 })
