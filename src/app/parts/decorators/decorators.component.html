@@ -1,0 +1,37 @@
+<div class="d1">
+  <h2>Parent Component</h2>
+  <button (click)="addItem()">Add Item</button>
+  <app-decorators-child-one
+    *ngIf="itemArr.length > 0"
+    [items]="itemArr"
+    (itemDeleted)="deleteItem($event)"
+  ></app-decorators-child-one>
+</div>
+
+<div class="d2">
+  <label for=""
+    >In Angular, decorators are used to add extra information to classes,
+    properties, and methods. Think of them as labels or tags that tell Angular
+    how to use different parts of your code. Example -
+    {{ decoratorExamples }}</label
+  >
+</div>
+
+<div class="d3">
+  <img src="/assets/input-op-decorators.jpg" alt="" />
+</div>
+
+<div class="d4">
+  <label for="colorPicker">Select Color</label>
+  <input type="color" id="colorPicker" #colorInput />
+</div>
+
+<div class="color-box" [style.backgroundColor]="selectedColor">
+  <h1>Candy component</h1>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, veritatis
+    quia obcaecati facilis consequatur sunt culpa, dignissimos, esse iste
+    repudiandae recusandae nemo eum laudantium sit dolore porro eaque officiis
+    consequuntur.
+  </p>
+</div>

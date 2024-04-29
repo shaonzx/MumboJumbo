@@ -21,6 +21,8 @@ import { MatCardModule } from '@angular/material/card';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { DirectivesSubmitformComponent } from './parts/directives-submitform/directives-submitform.component';
 import { UserPortfolioComponent } from './parts/user-portfolio/user-portfolio.component';
+import { DecoratorsComponent } from './parts/decorators/decorators.component';
+import { DecoratorsChildOneComponent } from './parts/decorators-child-one/decorators-child-one.component';
 
 @NgModule({
   //exported classes needs to be declared here. cannot declare multiple times.
@@ -30,6 +32,8 @@ import { UserPortfolioComponent } from './parts/user-portfolio/user-portfolio.co
     WelcomeComponent,
     DirectivesSubmitformComponent,
     UserPortfolioComponent,
+    DecoratorsComponent,
+    DecoratorsChildOneComponent,
   ],
   imports: [
     //additionls modules needed to be declared before using them.

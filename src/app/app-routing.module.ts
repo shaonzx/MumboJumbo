@@ -7,6 +7,7 @@ import { EventObjectComponent } from './parts/event-object/event-object.componen
 import { DirectivesComponent } from './parts/directives/directives.component';
 import { DirectivesSubmitformComponent } from './parts/directives-submitform/directives-submitform.component';
 import { UserPortfolioComponent } from './parts/user-portfolio/user-portfolio.component';
+import { DecoratorsComponent } from './parts/decorators/decorators.component';
 
 const routes: Routes = [
   //{ component: LayoutComponent, path: '' },
@@ -19,6 +20,7 @@ const routes: Routes = [
       { component: DirectivesComponent, path: 'directives' },
       { component: DirectivesSubmitformComponent, path: 'dummy-submit-form' },
       { component: UserPortfolioComponent, path: 'user-portfolio' },
+      { component: DecoratorsComponent, path: 'decorators' },
     ],
   },
   //{ component: WelcomeComponent, path: 'welcome' },
