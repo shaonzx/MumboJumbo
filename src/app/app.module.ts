@@ -23,6 +23,8 @@ import { DirectivesSubmitformComponent } from './parts/directives-submitform/dir
 import { UserPortfolioComponent } from './parts/user-portfolio/user-portfolio.component';
 import { DecoratorsComponent } from './parts/decorators/decorators.component';
 import { DecoratorsChildOneComponent } from './parts/decorators-child-one/decorators-child-one.component';
+import { PipesComponent } from './parts/pipes/pipes.component';
+import { SortArrayByPropertyPipe } from './libs/custom-pipes/sort-array-by-property.pipe';
 
 @NgModule({
   //exported classes needs to be declared here. cannot declare multiple times.
@@ -34,6 +36,8 @@ import { DecoratorsChildOneComponent } from './parts/decorators-child-one/decora
     UserPortfolioComponent,
     DecoratorsComponent,
     DecoratorsChildOneComponent,
+    PipesComponent,
+    SortArrayByPropertyPipe,
   ],
   imports: [
     //additionls modules needed to be declared before using them.

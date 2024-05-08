@@ -8,6 +8,7 @@ import { DirectivesComponent } from './parts/directives/directives.component';
 import { DirectivesSubmitformComponent } from './parts/directives-submitform/directives-submitform.component';
 import { UserPortfolioComponent } from './parts/user-portfolio/user-portfolio.component';
 import { DecoratorsComponent } from './parts/decorators/decorators.component';
+import { PipesComponent } from './parts/pipes/pipes.component';
 
 const routes: Routes = [
   //{ component: LayoutComponent, path: '' },
@@ -21,6 +22,7 @@ const routes: Routes = [
       { component: DirectivesSubmitformComponent, path: 'dummy-submit-form' },
       { component: UserPortfolioComponent, path: 'user-portfolio' },
       { component: DecoratorsComponent, path: 'decorators' },
+      { component: PipesComponent, path: 'pipes' },
     ],
   },
   //{ component: WelcomeComponent, path: 'welcome' },
