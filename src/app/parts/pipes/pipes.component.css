@@ -96,3 +96,11 @@ th {
 pre {
   color: #000000;
 }
+
+.scrollable-div {
+  max-height: 300px; /* Set a specific maximum height */
+  overflow-y: auto; /* Enable vertical scrolling if necessary */
+  padding: 20px;
+  background-color: aquamarine;
+  border-radius: 10px;
+}
