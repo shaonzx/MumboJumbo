@@ -9,6 +9,8 @@ import { DirectivesSubmitformComponent } from './parts/directives-submitform/dir
 import { UserPortfolioComponent } from './parts/user-portfolio/user-portfolio.component';
 import { DecoratorsComponent } from './parts/decorators/decorators.component';
 import { PipesComponent } from './parts/pipes/pipes.component';
+import { HorizontalMenuComponent } from './parts/horizontal-menu/horizontal-menu.component';
+import { ServiceDemoComponent } from './parts/service-demo/service-demo.component';
 
 const routes: Routes = [
   //{ component: LayoutComponent, path: '' },
@@ -23,6 +25,8 @@ const routes: Routes = [
       { component: UserPortfolioComponent, path: 'user-portfolio' },
       { component: DecoratorsComponent, path: 'decorators' },
       { component: PipesComponent, path: 'pipes' },
+      { path: 'horizontal-menu', component: HorizontalMenuComponent },
+      { path: 'service-demo', component: ServiceDemoComponent },
     ],
   },
   //{ component: WelcomeComponent, path: 'welcome' },

@@ -25,6 +25,8 @@ import { DecoratorsComponent } from './parts/decorators/decorators.component';
 import { DecoratorsChildOneComponent } from './parts/decorators-child-one/decorators-child-one.component';
 import { PipesComponent } from './parts/pipes/pipes.component';
 import { SortArrayByPropertyPipe } from './libs/custom-pipes/sort-array-by-property.pipe';
+import { HorizontalMenuComponent } from './parts/horizontal-menu/horizontal-menu.component';
+import { ServiceDemoComponent } from './parts/service-demo/service-demo.component';
 
 @NgModule({
   //exported classes needs to be declared here. cannot declare multiple times.
@@ -38,6 +40,8 @@ import { SortArrayByPropertyPipe } from './libs/custom-pipes/sort-array-by-prope
     DecoratorsChildOneComponent,
     PipesComponent,
     SortArrayByPropertyPipe,
+    HorizontalMenuComponent,
+    ServiceDemoComponent,
   ],
   imports: [
     //additionls modules needed to be declared before using them.
