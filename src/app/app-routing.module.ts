@@ -11,6 +11,7 @@ import { DecoratorsComponent } from './parts/decorators/decorators.component';
 import { PipesComponent } from './parts/pipes/pipes.component';
 import { HorizontalMenuComponent } from './parts/horizontal-menu/horizontal-menu.component';
 import { ServiceDemoComponent } from './parts/service-demo/service-demo.component';
+import { TemplateDrivenFormComponent } from './parts/template-driven-form/template-driven-form.component';
 
 const routes: Routes = [
   //{ component: LayoutComponent, path: '' },
@@ -27,6 +28,7 @@ const routes: Routes = [
       { component: PipesComponent, path: 'pipes' },
       { path: 'horizontal-menu', component: HorizontalMenuComponent },
       { path: 'service-demo', component: ServiceDemoComponent },
+      { path: 'template-driven-form', component: TemplateDrivenFormComponent },
     ],
   },
   //{ component: WelcomeComponent, path: 'welcome' },

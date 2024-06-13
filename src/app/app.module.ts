@@ -27,6 +27,7 @@ import { PipesComponent } from './parts/pipes/pipes.component';
 import { SortArrayByPropertyPipe } from './libs/custom-pipes/sort-array-by-property.pipe';
 import { HorizontalMenuComponent } from './parts/horizontal-menu/horizontal-menu.component';
 import { ServiceDemoComponent } from './parts/service-demo/service-demo.component';
+import { TemplateDrivenFormComponent } from './parts/template-driven-form/template-driven-form.component';
 
 @NgModule({
   //exported classes needs to be declared here. cannot declare multiple times.
@@ -42,6 +43,7 @@ import { ServiceDemoComponent } from './parts/service-demo/service-demo.componen
     SortArrayByPropertyPipe,
     HorizontalMenuComponent,
     ServiceDemoComponent,
+    TemplateDrivenFormComponent,
   ],
   imports: [
     //additionls modules needed to be declared before using them.
