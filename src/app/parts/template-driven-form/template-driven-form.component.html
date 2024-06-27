@@ -5,16 +5,16 @@
       <input type="text" name="name" ngModel required #name="ngModel" />
       <span>Name</span>
     </div>
-
     <div class="inputbox">
-      <input type="text" name="email" ngModel required #email="ngModel" />
+      <input type="email" name="email" ngModel required #email="ngModel" />
       <span>Email</span>
     </div>
-
     <div class="inputbox">
       <button type="submit">Submit</button>
       <button type="button" (click)="resetValue(myForm)">Reset</button>
-      <button type="button" (click)="setDefault(myForm)">Default Values</button>
+      <button type="button" (click)="setDefault(myForm)">
+        Set Default Value
+      </button>
     </div>
   </form>
 </div>

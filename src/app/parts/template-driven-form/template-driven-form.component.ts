@@ -16,4 +16,15 @@ export class TemplateDrivenFormComponent {
       alert('fill the required fields');
     }
   }
+
+  resetValue(myForm: NgForm) {
+    myForm.resetForm();
+  }
+
+  setDefault(myForm: NgForm) {
+    myForm.resetForm({
+      name: 'Default Name',
+      email: 'Default@Email.com',
+    });
+  }
 }
